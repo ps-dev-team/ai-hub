@@ -32,6 +32,7 @@ Global principles that define **how agents should behave**. Unlike skills (on-de
 | Skill | Description |
 |---|---|
 | [ci-cd](skills/ci-cd/) | GitHub Actions pipelines — lint, test, build, deploy |
+| [conventions-mobile](skills/conventions-mobile/) | React Native + TypeScript mobile conventions |
 | [conventions-node](skills/conventions-node/) | Node.js + TypeScript backend conventions |
 | [conventions-react](skills/conventions-react/) | React + TypeScript coding conventions |
 | [figma-dev](skills/figma-dev/) | Analyze Figma designs and implement them as code |
