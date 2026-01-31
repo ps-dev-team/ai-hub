@@ -69,6 +69,35 @@ Always include:
 - **What** changed (brief summary)
 - **Why** (context/motivation)
 - Bullet list of specific changes
+- **Design link** — If there's an associated design (Figma, etc.), include the link
+- **Screenshots** — Required for UI changes. Capture the result and embed in the PR body
+
+### Screenshots for UI Changes
+
+When a PR includes visual/UI changes, screenshots are **mandatory**:
+
+1. Run the app locally (dev server or build)
+2. Capture screenshots of the affected views
+3. Embed in the PR body using markdown:
+
+```markdown
+## Screenshots
+
+![Description](url-to-image)
+```
+
+Upload images via `gh` CLI:
+```bash
+# GitHub accepts images pasted in PR body or uploaded via the web UI
+# From CLI, use issue/PR body with image URLs or base64
+```
+
+For before/after comparisons, use a table:
+```markdown
+| Before | After |
+|--------|-------|
+| ![before](url) | ![after](url) |
+```
 
 ### Merge Strategy
 
