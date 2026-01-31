@@ -32,6 +32,7 @@ Global principles that define **how agents should behave**. Unlike skills (on-de
 | Skill | Description |
 |---|---|
 | [figma-dev](skills/figma-dev/) | Analyze Figma designs and implement them as code |
+| [github](skills/github/) | GitHub workflow conventions, PRs, commits, and CI |
 | [youtube-gemini](skills/youtube-gemini/) | Analyze YouTube videos with Gemini AI |
 
 ## Usage
