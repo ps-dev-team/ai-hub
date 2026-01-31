@@ -35,6 +35,9 @@ Global principles that define **how agents should behave**. Unlike skills (on-de
 | [github](skills/github/) | GitHub workflow conventions, PRs, commits, and CI |
 | [notion](skills/notion/) | Project and task management, daily reports, time tracking |
 | [prd](skills/prd/) | Product Requirements Documents — spec, plan, and project setup |
+| [qa-backend](skills/qa-backend/) | QA checklist for backend — tests, API contracts, security |
+| [qa-frontend](skills/qa-frontend/) | QA checklist for frontend web — visual regression, a11y, perf |
+| [qa-mobile](skills/qa-mobile/) | QA checklist for mobile — device testing, platform-specific |
 | [youtube-gemini](skills/youtube-gemini/) | Analyze YouTube videos with Gemini AI |
 
 ## Usage
