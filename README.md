@@ -33,6 +33,7 @@ Global principles that define **how agents should behave**. Unlike skills (on-de
 |---|---|
 | [figma-dev](skills/figma-dev/) | Analyze Figma designs and implement them as code |
 | [github](skills/github/) | GitHub workflow conventions, PRs, commits, and CI |
+| [notion](skills/notion/) | Project and task management, daily reports, time tracking |
 | [youtube-gemini](skills/youtube-gemini/) | Analyze YouTube videos with Gemini AI |
 
 ## Usage
@@ -67,6 +68,7 @@ Skills use environment variables for API keys. Never hardcode credentials.
 |---|---|
 | `FIGMA_API_TOKEN` | figma-dev |
 | `GEMINI_API_KEY` | youtube-gemini |
+| `NOTION_API_KEY` | notion |
 
 ## Contributors
 
