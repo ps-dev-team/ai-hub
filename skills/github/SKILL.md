@@ -101,8 +101,8 @@ For before/after comparisons, use a table:
 
 ### Merge Strategy
 
-- **1 PR = 1 squashed commit** on merge
-- Merge method: **squash and merge** (or rebase if single commit)
+- **1 PR = 1 commit** — squash locally before pushing if you iterated
+- Merge method: **rebase and merge**
 - Branch is deleted after merge
 
 ### After Merge
