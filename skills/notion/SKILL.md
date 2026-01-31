@@ -92,9 +92,45 @@ Columns:
 ### Completing a Task
 
 1. Open PR → move status to `In Review`
-2. After merge → move status to `Done`
-3. Set `Completed At` to current timestamp
-4. Update `Time Spent` with total minutes
+2. Add PR link to Notes
+3. After merge → move status to `Done`
+4. Set `Completed At` to current timestamp
+5. Update `Time Spent` with total minutes
+
+### PR ↔ Ticket Lifecycle
+
+Tickets in `In Review` must be synced with their GitHub PR state:
+
+```
+Ticket "In Review"
+│
+├── PR has unresolved comments
+│   → Address comments, push fixes, resolve threads
+│   → Keep ticket "In Review" and note: "Addressed review comments"
+│   → OR move to "In Progress" if significant rework needed
+│
+├── PR merged
+│   → Move ticket to "Done"
+│   → Set Completed At
+│   → Update Time Spent
+│
+├── PR closed without merge
+│   → Move ticket back to "In Progress"
+│   → Add reason in Notes
+│
+└── PR still open, no comments
+    → No action needed, stay "In Review"
+```
+
+**Board review check (periodic):**
+For each ticket in `In Review`:
+1. Find the associated PR (from Notes or branch name)
+2. Check PR state on GitHub: `open`, `merged`, or `closed`
+3. Check for review comments (especially unresolved)
+4. Act per the lifecycle above
+5. Update ticket Notes with current state
+
+This prevents stale tickets sitting in `In Review` after PRs are already merged.
 
 ### Reviewing the Board
 
